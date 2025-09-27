@@ -1,0 +1,76 @@
+.blur-property{
+  backdrop-filter: blur(20px); 
+  -webkit-backdrop-filter: blur(20px); 
+   background-color: rgba(255, 255, 255, 0.4); 
+  padding: 1rem;
+  border-radius: 10px;
+  transition:all 0.3s linear;
+  box-shadow: -5px -5px 50px black;
+}
+
+
+.blur-property:hover,.blur-property:focus{
+  transform: scale(1.09);
+}
+
+.tiltCrown{
+  transform: rotate(350deg);
+}
+
+.image-shadow
+{
+    filter: drop-shadow(5px 5px 5px black,
+    -5px -5px 5px black),
+}
+
+.gradient-text{
+  background: -webkit-linear-gradient(#fb00ff, #f1dbf5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-heading{
+  background:  -webkit-linear-gradient(#e163f7, #e8bfef, #e39eef, #eed2f3);
+  /*-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;*/
+}
+.bouncing-animation{
+  animation: bouncing 10s 1 ease-in-out;
+}
+
+@keyframes bouncing {
+  /* 20%, 50%, 80% {
+    transform: translateY(-50px); 
+  }
+  0%, 35%, 65%, 100% {
+    transform: translateY(0); 
+  } */
+  0%{
+    transform : translateX(-1000px);
+    transform: translateY(-100px);
+  }
+  20%{
+    transform: translateX(-200px);
+    transform: translateY(-50px);
+  }
+  40%{
+    transform: translateX(0);
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateX(120px);
+    /* transform: translateY(30px); */
+  }
+  70%{
+    transform: translateX(240px);
+    /* transform: translateY(0); */
+  }
+  80%{
+    transform: translateX(120px);
+    /* transform: translateY(30px); */
+  }
+  100%{
+    transform: translateX(0);
+    /* transform: translateY(0); */
+  }
+}
